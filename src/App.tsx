@@ -2,7 +2,7 @@ import {useEffect,useMemo,useState} from 'react';
 import {Search, LayoutDashboard, Users, KanbanSquare, CalendarDays, Settings, Plus, MapPin, Phone, Mail, Globe, ChevronRight, X} from 'lucide-react';
 import {supabase} from './lib';
 
-type Lead={id:string;company_name:string;industry:string|null;state:string|null;municipality:string|null;phone:string|null;email:string|null;website:string|null;stage:string;updated_at:string};
+type Lead={id:string;company_name:string;industry:string|null;state:string|null;municipality:string|null;address:string|null;phone:string|null};
 const stages=[['lead','Lead'],['prospecto','Prospecto'],['negociacion','Negociación'],['ganado','Ganado'],['cerrado','Cerrado']];
 const states=['Ciudad de México','Estado de México','Jalisco','Nuevo León','Puebla','Querétaro','Guanajuato','Veracruz','Yucatán','Chihuahua','Baja California','Sonora'];
 
