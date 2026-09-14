@@ -15,7 +15,7 @@ export default async (req: Request) => {
   return Response.json({error: 'El parámetro "condicion" (nombre de empresa o giro) es requerido.'}, {status: 400});
  }
 
- const denueUrl = `${DENUE_BASE}/Buscar/${encodeURIComponent(condicion)}/${encodeURIComponent(entidad)}/0/60/${token}`;
+ const denueUrl = `${DENUE_BASE}/BuscarEntidad/${encodeURIComponent(condicion)}/${encodeURIComponent(entidad)}/1/60/${token}`;
 
  try {
   const res = await fetch(denueUrl);
