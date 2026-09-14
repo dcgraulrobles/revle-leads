@@ -34,6 +34,7 @@ export default async (req: Request) => {
   return Response.json({error: `No se pudo conectar con el servicio DENUE: ${(e as Error).message}`}, {status: 502});
  }
 };
+// Refresh Netlify deploy preview
 
 export const config: Config = {
  path: '/api/denue-search',
